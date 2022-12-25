@@ -5,20 +5,27 @@
   box-sizing: border-box;
 }
 
+
+/* Cabeçalho */
+
 .head-container {
   display: flex;
   flex-direction: row;
+  border-top: 1px solid #333;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100vw;
   align-items: center;
   justify-content: center;
   background-image: url(./img/head-bg.png);
-  height: 4.6rem;
+  height: 10vh;
   border-bottom: 2px solid rgb(206, 23, 23);
 }
 
 .head-container .title {
   text-transform: uppercase;
-  font-size: calc(0.9em + 1vw);
+  font-size: calc(0.8em + 1vw);
   text-shadow: 0.1rem 0.1rem #fff;
   letter-spacing: 0.2rem;
   margin-left: 2.2rem;
@@ -36,3 +43,81 @@
   font-size: calc(4rem + 1vw);
   color: #625a79;
 }
+
+/* Principal */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 80vh;
+  background-color: #8e8c8c;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  width: 20rem;
+  height: 28rem;
+  border-radius: 28px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2) ;
+}
+
+.card #input-text {
+  width: 200px;
+  height: 220px;
+  resize: none;
+  border: none;
+  text-indent: 10%;
+  padding-top: 15px;
+
+}
+
+
+/* Rodapé */
+
+.foot {
+  height: 3.2rem;
+}
+
+footer.foot {
+  width: 100vw;
+  height: 10vh;
+  border-top: 1px solid rgb(194, 26, 26);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* resolução genérica */
+@media /*only screen and*/ (min-width: 281px) and (max-width: 520px) {
+  .logo {
+    display: none;
+  }
+  .card {
+    width: 22rem;
+    height: 30rem;
+
+  }
+  
+}
+
+/* resolução galaxy fold */
+@media(max-width: 280px) { 
+   .logo{
+    display: none;
+   }
+  .head-container,
+  .head-container .title,
+  .container,
+  .foot {
+    width: 280px;
+  }
+
+}
+
