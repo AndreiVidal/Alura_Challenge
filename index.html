@@ -11,15 +11,22 @@
     <header class="head">
       <div class="head-container">
         <img class="logo" src="./src/img/logo.png" alt="">
-        <h1 class="title"><span>D</span>ecodificador</h1>
+        <h1 class="title"><span>D</span>e|<span>c</span>odificador</h1>
       </div>
     </header><!-- header -->
     <main>
       <div class="card">
-        <textarea placeholder="Digite um texto..." id="input-text"></textarea>
+        <textarea id="input-text" placeholder="Digite um texto..."></textarea>
         <div class="btn-box">
-          <input type="button" value="Codificar">
-          <input type="button" value="Decodificar">
+          <input id= "btn-cod" type="button" value="Codificar">
+          <input id="btn-decod" type="button" value="Decodificar">
+        </div>
+      </div> 
+      <div class="card card-2">
+        <textarea readonly placeholder="" id="output-text"></textarea>
+        <div class="btn-box">
+          <input  type="button" value="Copiar">
+          <input id="reset" type="reset" value="reset">
         </div>
       </div>
     </main><!-- main -->
