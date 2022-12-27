@@ -48,7 +48,8 @@
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 40px;
   height: 80vh;
@@ -65,9 +66,10 @@ main {
   height: 28rem;
   border-radius: 28px;
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2) ;
+
 }
 
-.card #input-text {
+.card #input-text, #output-text {
   width: 200px;
   height: 220px;
   resize: none;
@@ -95,7 +97,12 @@ footer.foot {
 }
 
 /* resolução genérica */
-@media /*only screen and*/ (min-width: 281px) and (max-width: 520px) {
+@media /*only screen and*/ (min-width: 281px) and (max-width: 600px) {
+
+  main {
+    flex-direction: column;
+    gap: 10px;
+  }
   .logo {
     display: none;
   }
@@ -104,11 +111,20 @@ footer.foot {
     height: 30rem;
 
   }
+
+  .card-2{
+    height: 11rem;
+
+  }
   
 }
 
 /* resolução galaxy fold */
 @media(max-width: 280px) { 
+  main {
+    flex-direction: column;
+    gap: 10px;
+  }
    .logo{
     display: none;
    }
