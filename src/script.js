@@ -1,28 +1,25 @@
-const btn = document.getElementById("btn-cod")
-const btn2 = document.getElementById("reset")
-const inputText = document.getElementById("input-text")
-const outputText = document.getElementById("output-text")
-btn.addEventListener("click", teste);
-btn2.addEventListener("click", limpar);
+const outputText = document.getElementById("output-text");
+const inputText = document.getElementById("input-text");
+const btnCod = document.getElementById("btn-cod");
+const btnDecod = document.getElementById("btn-decod");
+const btnCopy = document.getElementById("copy");
+const btnAll = document.querySelectorAll(".btn");
 
-function limpar() {
-    if (outputText.value !== "") {
-        outputText.value = ""
-    }else {return}
-    
+// Evento de troca
+for (let btn of btnAll) {
+  btn.addEventListener("click", () => {
+    let changeCard = document.getElementById("switch");
+
+    if (inputText.value == "" || changeCard.checked) {
+      changeCard.checked = false;
+    } else if (outputText.value == "" || !changeCard.checked) {
+      changeCard.checked = true;
+      
+    } 
+  });
 }
 
-
-function teste() {
-    
-    if (inputText.value ==="") {
-      alert('Campo vazio')
-    } else {
-      let valor = inputText.value
-        outputText.value = valor
-    
-    }
-    
-}
-
-  
+btnCod.addEventListener("click", () => {
+  let input = inputText.value;
+  outputText.textContent = input;
+});

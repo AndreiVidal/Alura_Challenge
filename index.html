@@ -14,21 +14,24 @@
         <h1 class="title"><span>D</span>e|<span>c</span>odificador</h1>
       </div>
     </header><!-- header -->
+    <input type="checkbox" id="switch" />
     <main>
-      <div class="card">
-        <textarea id="input-text" placeholder="Digite um texto..."></textarea>
-        <div class="btn-box">
-          <input id= "btn-cod" type="button" value="Codificar">
-          <input id="btn-decod" type="button" value="Decodificar">
+      <div class="card-container">
+      <div class="card " id="card">
+            <textarea id="input-text" onfocus="this.value='';"
+              placeholder="Digite um texto..."></textarea>
+            <div class="btn-box">
+              <input class="btn"id="btn-cod" type="button" value="Codificar">
+              <input class="btn" id="btn-decod" type="button" value="Decodificar">
+            </div>
+          </div>
+          <div class="card card-2" id="card-2">
+            <textarea readonly placeholder="" id="output-text"></textarea>
+            <div class="btn-box">
+              <input class="btn" type="button" value="Copiar"  id="copy">
+            </div>
+          </div>
         </div>
-      </div> 
-      <div class="card card-2">
-        <textarea readonly placeholder="" id="output-text"></textarea>
-        <div class="btn-box">
-          <input  type="button" value="Copiar">
-          <input id="reset" type="reset" value="reset">
-        </div>
-      </div>
     </main><!-- main -->
     <footer class="foot">
       <p>&copy; Andrei Vidal </p>
