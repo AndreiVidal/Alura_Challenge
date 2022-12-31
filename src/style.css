@@ -41,7 +41,7 @@
 }
 .title span {
   font-size: calc(4rem + 1vw);
-  color: #625a79;
+  color: #24242b;
 }
 
 /* Principal */
@@ -96,6 +96,16 @@ select:focus {
 textarea {
 
   background-color: transparent;
+}
+
+.warning {
+  font-size: small;
+  border: 2px solid #f39389;
+  border-radius: 2px;
+  padding: 10px;
+  position: absolute;
+  background-color: #fbd8d4;
+  color: #3b3c40;
 }
 
 .card,
