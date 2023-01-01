@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
-    <title>Decodificador</title>
+    <link rel="shortcut icon" href="./src/img/favicon-16x16.png" type="image/x-icon">
+    <title>DeCodificador</title>
   </head>
   <body>
     <header class="head">
@@ -17,25 +18,34 @@
     <input type="checkbox" id="switch" />
     <main>
       <div class="card-container">
-      <div class="card " id="card">
-            <textarea id="input-text" 
-              placeholder="Digite um texto..." class="all-text"></textarea>
-              <div class="btn-box">
-                <input class="btn"id="btn-cod" type="button" value="Codificar">
-                <input class="btn" id="btn-decod" type="button" value="Decodificar">
-              </div>
-              <p style="font-size: smaller;">Digite somente letras minúsculas e sem acentos</p>
+        <div class="card " id="card">
+          <textarea id="input-text"
+            placeholder="Digite um texto..." class="all-text"></textarea>
+          <div class="btn-box">
+            <input class="btn" id="btn-cod" type="button" value="Codificar">
+            <input class="btn" id="btn-decod" type="button" value="Decodificar">
           </div>
-          <div class="card card-2" id="card-2">
-            <textarea readonly placeholder="" class="all-text" id="output-text"></textarea>
-            <div class="btn-box">
-              <input class="btn" type="button" value="Copiar"  id="copy">
-            </div>
+          <p style="font-size: smaller;">Digite somente letras minúsculas e sem
+            acentos</p>
+        </div>
+        <div class="card card-2" id="card-2">
+          <textarea readonly placeholder="" class="all-text" id="output-text"></textarea>
+          <div class="btn-box">
+            <input class="btn" type="button" value="Copiar" id="copy">
           </div>
         </div>
+      </div>
     </main><!-- main -->
     <footer class="foot">
-      <p>&copy; Andrei Vidal </p>
+      <div class="nav-footer">
+        <ul class="list">
+          <li><a href="https://www.instagram.com/andreiividal/" target="_blank"><img src="./src/img/intagram.svg" alt="instagram"></a></li>
+          <li><a href="mailto:andrei.godoi92@gmail.com" target="_blank" ><img src="./src/img/gmail.svg" alt="gmail"></a></li>
+          <li><a href="https://www.linkedin.com/in/andrei-vidal" target="_blank"><img src="./src/img/linkedin.svg" alt="linkedin"></a></li>
+          <li><a href="https://github.com/AndreiVidal" target="_blank"><img src="./src/img/github.svg" alt="github"></a></li>
+        </ul>
+        <p>&copy; Andrei Vidal </p>
+      </div>
     </footer><!-- footer -->
 
     <script src="./src/script.js"></script>

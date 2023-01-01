@@ -20,7 +20,6 @@
   justify-content: center;
   background-image: url(./img/head-bg.png);
   height: 10vh;
-  border-bottom: 2px solid rgb(206, 23, 23);
 }
 
 .head-container .title {
@@ -170,14 +169,32 @@ display: none;
   height: 3.2rem;
 }
 
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+
+}
+
+.nav-footer p {
+  color: #24242b;
+  font-weight: 800;
+}
+.list{
+  list-style: none;
+  display: flex;
+}
+
 footer.foot {
+  background-color: #88847a;
   width: 100vw;
   height: 10vh;
-  border-top: 1px solid rgb(194, 26, 26);
   position: fixed;
   bottom: 0;
   left: 0;
-  text-align: center;
+ 
 }
 
 /* resolução genérica */
